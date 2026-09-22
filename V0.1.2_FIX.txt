@@ -1,0 +1,8 @@
+ChallengeDXCC C++ V0.1.2
+
+Corrections Qt 6.8.2 / MinGW 13.1 :
+- core/adif.cpp : QStringDecoder Windows-1252 corrigé.
+- backend/jtdxudplistener.cpp : même correction.
+- backend/localdxclusterserver.h : ajout de #include <QTimer>.
+- backend/challengebackend.cpp : suppression du warning QDateTime déprécié.
+- correction AutoMoc de V0.1.1 conservée.

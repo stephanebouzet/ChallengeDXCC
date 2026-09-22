@@ -1,0 +1,61 @@
+Antartica|ANTARCTICA
+Austral Islands|AUSTRAL I.
+Azores Islands|AZORES
+Banaba (Ocean Island)|BANABA I. (OCEAN I.)
+Barbados Island|BARBADOS
+Bouvet Island|BOUVET
+British Military Bases, Cyprus|UK SOVEREIGN BASE AREAS ON CYPRUS
+Brunei|BRUNEI DARUSSALAM
+Cape Verde Islands|CAPE VERDE
+Central African Republic|CENTRAL AFRICA
+Central Kiribati|C. KIRIBATI (BRITISH PHOENIX IS.)
+Chagos, Diego Garcia|CHAGOS IS.
+Chesterfield Island|CHESTERFIELD IS.
+Comoros Islands|COMOROS
+Crozet|CROZET I.
+Democratic Rep. of Congo|DEMOCRATIC REPUBLIC OF THE CONGO
+Dodecanese Islands|DODECANESE
+East Kiribati|E. KIRIBATI (LINE IS.)
+Fiji Islands|FIJI
+Glorioso Island|GLORIOSO IS.
+Guantanamo Bay, Cuba|GUANTANAMO BAY
+Guernsey Islands|GUERNSEY
+Hawaiian Islands|HAWAII
+Jersey Islands|JERSEY
+Juan Fernandez|JUAN FERNANDEZ IS.
+Juan de Nova & Europa|JUAN DE NOVA, EUROPA
+Kerguelen Island|KERGUELEN IS.
+Kingdom of Saudi Arabia|SAUDI ARABIA
+Kingdom of eSwatini|SWAZILAND
+Madeira Island|MADEIRA IS.
+Mauritius Island|MAURITIUS
+Minami Torishima (Marcus)|MINAMI TORISHIMA
+Mt. Athos|MOUNT ATHOS
+North Macedonia|MACEDONIA
+Peoples Republic of China|CHINA
+Peter I Island|PETER 1 I.
+Republic of Iraq|IRAQ
+Republic of South Africa|SOUTH AFRICA
+Saba & Sint Eustatius|SABA & ST. EUSTATIUS
+Samoa Islands|SAMOA
+San Felix|SAN FELIX & SAN AMBROSIO
+Sao Tome & Principe Islands|SAO TOME & PRINCIPE
+Sardinia Island|SARDINIA
+Sint Maarten|ST MAARTEN
+Slovakia|SLOVAK REPUBLIC
+Somali Democratic Republic|SOMALIA
+South Georgia Islands|SOUTH GEORGIA I.
+South Sudan|SOUTH SUDAN (REPUBLIC OF)
+Sov.Military Order of Malta|SOVEREIGN MILITARY ORDER OF MALTA
+St. Christopher & Nevis|ST. KITTS & NEVIS
+St. Peter & St. Paul Archipelago|ST. PETER & ST. PAUL ROCKS
+St. Pierre & Miquelon Islands|ST. PIERRE & MIQUELON
+Trindade & Martin Vaz Islands|TRINDADE & MARTIM VAZ IS.
+Tristan de Cunha & Gough Is.|TRISTAN DA CUNHA & GOUGH I.
+US Virgin Islands|VIRGIN IS.
+Union of Myanmar|MYANMAR
+Vatican City|VATICAN
+Vietnam|VIET NAM
+West Kiribati|W. KIRIBATI (GILBERT IS. )
+Federated States of Micronesia|MICRONESIA
+DPR of Korea|DEMOCRATIC PEOPLE'S REP. OF KOREA

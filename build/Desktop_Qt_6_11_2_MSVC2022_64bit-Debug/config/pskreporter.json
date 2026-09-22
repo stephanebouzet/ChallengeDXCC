@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "host": "mqtt.pskreporter.info",
+  "port": 1883,
+  "modes": [
+    "FT8",
+    "FT4"
+  ],
+  "rx_dxcc": [
+    227
+  ],
+  "dedupe_seconds": 60
+}

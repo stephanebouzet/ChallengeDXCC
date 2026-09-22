@@ -1,0 +1,27 @@
+/* ChallengeDXCC V0.9.39 */
+
+QPushButton {
+    border: 1px solid #8b8f95;
+    border-top-color: #d3d5d8;
+    border-left-color: #d3d5d8;
+    border-bottom-color: #666b72;
+    border-right-color: #666b72;
+    border-radius: 4px;
+    padding: 3px 8px;
+}
+
+QPushButton:hover {
+    border-top-color: #bfc3c8;
+    border-left-color: #bfc3c8;
+    border-bottom-color: #545960;
+    border-right-color: #545960;
+}
+
+QPushButton:pressed {
+    border-top-color: #5e636a;
+    border-left-color: #5e636a;
+    border-bottom-color: #c5c8cc;
+    border-right-color: #c5c8cc;
+    padding-top: 4px;
+    padding-left: 9px;
+}

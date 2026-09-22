@@ -1,0 +1,8 @@
+{
+  "name": "DXCC Challenge 2025-2026",
+  "adif_path": "",
+  "start_date": "2025-09-01",
+  "end_date": "2026-08-31",
+  "bands": ["160m", "80m", "40m", "30m", "20m", "17m", "15m", "12m", "10m"],
+  "modes": []
+}

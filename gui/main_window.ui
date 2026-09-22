@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ChallengeDXCCWidget</class>
+ <widget class="QWidget" name="ChallengeDXCCWidget">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>1500</width><height>900</height></rect>
+  </property>
+  <layout class="QVBoxLayout" name="rootLayout">
+   <property name="leftMargin"><number>8</number></property>
+   <property name="topMargin"><number>8</number></property>
+   <property name="rightMargin"><number>8</number></property>
+   <property name="bottomMargin"><number>8</number></property>
+   <property name="spacing"><number>6</number></property>
+   <item>
+    <widget class="QSplitter" name="mainSplitter">
+     <property name="orientation"><enum>Qt::Vertical</enum></property>
+     <property name="childrenCollapsible"><bool>false</bool></property>
+     <widget class="QSplitter" name="topSplitter">
+      <property name="orientation"><enum>Qt::Horizontal</enum></property>
+      <property name="childrenCollapsible"><bool>false</bool></property>
+
+      <!-- CHALLENGE -->
+      <widget class="QWidget" name="challengePanel">
+       <layout class="QVBoxLayout" name="challengePanelLayout">
+        <property name="leftMargin"><number>0</number></property>
+        <property name="topMargin"><number>0</number></property>
+        <property name="rightMargin"><number>0</number></property>
+        <property name="bottomMargin"><number>0</number></property>
+        <property name="spacing"><number>5</number></property>
+        <item>
+         <widget class="QGroupBox" name="challengeGroup">
+          <property name="title"><string>CHALLENGE ACTIF</string></property>
+          <layout class="QGridLayout" name="challengeFormLayout">
+           <property name="leftMargin"><number>8</number></property>
+           <property name="topMargin"><number>6</number></property>
+           <property name="rightMargin"><number>8</number></property>
+           <property name="bottomMargin"><number>6</number></property>
+           <property name="horizontalSpacing"><number>6</number></property>
+           <property name="verticalSpacing"><number>4</number></property>
+           <item row="0" column="0"><widget class="QLabel" name="nameLabel"><property name="text"><string>Nom</string></property></widget></item>
+           <item row="0" column="1" colspan="3"><widget class="QLineEdit" name="nameEdit"/></item>
+           <item row="1" column="0"><widget class="QLabel" name="adifLabel"><property name="text"><string>ADIF</string></property></widget></item>
+           <item row="1" column="1" colspan="2"><widget class="QLineEdit" name="adifEdit"><property name="readOnly"><bool>true</bool></property></widget></item>
+           <item row="1" column="3"><widget class="QPushButton" name="chooseAdifButton"><property name="text"><string>Choisir ADIF…</string></property></widget></item>
+           <item row="2" column="0"><widget class="QLabel" name="startLabel"><property name="text"><string>Début</string></property></widget></item>
+           <item row="2" column="1"><widget class="QDateEdit" name="startEdit"><property name="calendarPopup"><bool>true</bool></property></widget></item>
+           <item row="2" column="2"><widget class="QLabel" name="endLabel"><property name="text"><string>Fin</string></property></widget></item>
+           <item row="2" column="3"><widget class="QDateEdit" name="endEdit"><property name="calendarPopup"><bool>true</bool></property></widget></item>
+           <item row="3" column="2" colspan="2"><widget class="QPushButton" name="applyProfileButton"><property name="text"><string>Recalculer / Appliquer</string></property></widget></item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="band">
+          <property name="editTriggers"><set>QAbstractItemView::NoEditTriggers</set></property>
+          <property name="selectionBehavior"><enum>QAbstractItemView::SelectRows</enum></property>
+          <property name="selectionMode"><enum>QAbstractItemView::SingleSelection</enum></property>
+          <property name="alternatingRowColors"><bool>true</bool></property>
+          <column><property name="text"><string>Bande</string></property></column>
+          <column><property name="text"><string>Travaillés</string></property></column>
+          <column><property name="text"><string>Manquants</string></property></column>
+          <column><property name="text"><string>% réalisés</string></property></column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+
+      <!-- MANQUANTS -->
+      <widget class="QWidget" name="missingPanel">
+       <layout class="QVBoxLayout" name="missingPanelLayout">
+        <property name="leftMargin"><number>0</number></property>
+        <property name="topMargin"><number>0</number></property>
+        <property name="rightMargin"><number>0</number></property>
+        <property name="bottomMargin"><number>0</number></property>
+        <property name="spacing"><number>4</number></property>
+        <item>
+         <widget class="QLabel" name="missingTitle">
+          <property name="text"><string>DXCC MANQUANTS</string></property>
+          <property name="styleSheet"><string notr="true">font-size:15px;font-weight:bold;</string></property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="missing">
+          <property name="editTriggers"><set>QAbstractItemView::NoEditTriggers</set></property>
+          <property name="selectionBehavior"><enum>QAbstractItemView::SelectRows</enum></property>
+          <property name="alternatingRowColors"><bool>true</bool></property>
+          <column><property name="text"><string>DXCC</string></property></column>
+          <column><property name="text"><string>Préfixe</string></property></column>
+          <column><property name="text"><string>Pays / Entité</string></property></column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+
+      <!-- SERVICES -->
+      <widget class="QWidget" name="servicesPanel">
+       <layout class="QVBoxLayout" name="servicesPanelLayout">
+        <property name="leftMargin"><number>0</number></property>
+        <property name="topMargin"><number>0</number></property>
+        <property name="rightMargin"><number>0</number></property>
+        <property name="bottomMargin"><number>0</number></property>
+        <item>
+         <widget class="QGroupBox" name="servicesGroup">
+          <property name="title"><string>CONNEXIONS / SERVICES</string></property>
+          <layout class="QVBoxLayout" name="servicesGroupLayout">
+           <property name="leftMargin"><number>8</number></property>
+           <property name="topMargin"><number>8</number></property>
+           <property name="rightMargin"><number>8</number></property>
+           <property name="bottomMargin"><number>8</number></property>
+           <property name="spacing"><number>6</number></property>
+           <item>
+            <widget class="QWidget" name="servicesCardsHost">
+             <layout class="QVBoxLayout" name="servicesCardsLayout">
+              <property name="leftMargin"><number>0</number></property>
+              <property name="topMargin"><number>0</number></property>
+              <property name="rightMargin"><number>0</number></property>
+              <property name="bottomMargin"><number>0</number></property>
+              <property name="spacing"><number>4</number></property>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="servicesButtonsLayout">
+             <property name="spacing"><number>6</number></property>
+             <item><widget class="QPushButton" name="restartServicesButton"><property name="minimumHeight"><number>30</number></property><property name="text"><string>Redémarrer les services</string></property></widget></item>
+             <item><widget class="QPushButton" name="stopServicesButton"><property name="minimumHeight"><number>30</number></property><property name="text"><string>Arrêter</string></property></widget></item>
+            </layout>
+           </item>
+           <item><widget class="QPushButton" name="tuneAutoButton"><property name="minimumHeight"><number>32</number></property><property name="text"><string>Tune Auto</string></property></widget></item>
+           <item><spacer name="servicesSpacer"><property name="orientation"><enum>Qt::Vertical</enum></property><property name="sizeHint" stdset="0"><size><width>20</width><height>10</height></size></property></spacer></item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+
+     <!-- LOWER AREA -->
+     <widget class="QWidget" name="journalArea">
+      <layout class="QHBoxLayout" name="journalAreaLayout">
+       <property name="leftMargin"><number>0</number></property>
+       <property name="topMargin"><number>0</number></property>
+       <property name="rightMargin"><number>0</number></property>
+       <property name="bottomMargin"><number>0</number></property>
+       <property name="spacing"><number>6</number></property>
+       <item>
+        <widget class="QSplitter" name="journalSplitter">
+         <property name="orientation"><enum>Qt::Horizontal</enum></property>
+         <property name="childrenCollapsible"><bool>false</bool></property>
+         <widget class="QGroupBox" name="spotsGroup">
+          <property name="title"><string>DX SPOTS</string></property>
+          <layout class="QVBoxLayout" name="spotsLayout">
+           <property name="leftMargin"><number>6</number></property>
+           <property name="topMargin"><number>5</number></property>
+           <property name="rightMargin"><number>6</number></property>
+           <property name="bottomMargin"><number>5</number></property>
+           <item>
+            <layout class="QHBoxLayout" name="spotBandFilterLayout">
+             <property name="spacing"><number>3</number></property>
+             <item><widget class="QRadioButton" name="spotBandAll"><property name="text"><string>Tous</string></property><property name="checked"><bool>true</bool></property></widget></item>
+             <item><widget class="QRadioButton" name="spotBand160"><property name="text"><string>160</string></property></widget></item>
+             <item><widget class="QRadioButton" name="spotBand80"><property name="text"><string>80</string></property></widget></item>
+             <item><widget class="QRadioButton" name="spotBand40"><property name="text"><string>40</string></property></widget></item>
+             <item><widget class="QRadioButton" name="spotBand30"><property name="text"><string>30</string></property></widget></item>
+             <item><widget class="QRadioButton" name="spotBand20"><property name="text"><string>20</string></property></widget></item>
+             <item><widget class="QRadioButton" name="spotBand17"><property name="text"><string>17</string></property></widget></item>
+             <item><widget class="QRadioButton" name="spotBand15"><property name="text"><string>15</string></property></widget></item>
+             <item><widget class="QRadioButton" name="spotBand12"><property name="text"><string>12</string></property></widget></item>
+             <item><widget class="QRadioButton" name="spotBand10"><property name="text"><string>10</string></property></widget></item>
+             <item><spacer name="spotBandFilterSpacer"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint" stdset="0"><size><width>10</width><height>20</height></size></property></spacer></item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QTableWidget" name="spots">
+             <property name="editTriggers"><set>QAbstractItemView::NoEditTriggers</set></property>
+             <property name="selectionBehavior"><enum>QAbstractItemView::SelectRows</enum></property>
+             <property name="selectionMode"><enum>QAbstractItemView::SingleSelection</enum></property>
+             <property name="alternatingRowColors"><bool>true</bool></property>
+             <column><property name="text"><string>Vu</string></property></column>
+             <column><property name="text"><string>DX</string></property></column>
+             <column><property name="text"><string>Pays</string></property></column>
+             <column><property name="text"><string>Bande</string></property></column>
+             <column><property name="text"><string>Mode</string></property></column>
+             <column><property name="text"><string>SNR</string></property></column>
+             <column><property name="text"><string>Fréq.</string></property></column>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QGroupBox" name="logGroup">
+          <property name="title"><string>JOURNAL DES COMMUNICATIONS ET ÉVÉNEMENTS</string></property>
+          <layout class="QVBoxLayout" name="logLayout">
+           <property name="leftMargin"><number>6</number></property>
+           <property name="topMargin"><number>5</number></property>
+           <property name="rightMargin"><number>6</number></property>
+           <property name="bottomMargin"><number>5</number></property>
+           <item>
+            <widget class="QTableWidget" name="log">
+             <property name="editTriggers"><set>QAbstractItemView::NoEditTriggers</set></property>
+             <property name="selectionBehavior"><enum>QAbstractItemView::SelectRows</enum></property>
+             <column><property name="text"><string>Heure</string></property></column>
+             <column><property name="text"><string>Source</string></property></column>
+             <column><property name="text"><string>Type</string></property></column>
+             <column><property name="text"><string>Message</string></property></column>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+
+       <!-- FILTERS -->
+       <item>
+        <widget class="QWidget" name="filterPanel">
+         <property name="minimumWidth"><number>205</number></property>
+         <property name="maximumWidth"><number>205</number></property>
+         <layout class="QVBoxLayout" name="filterPanelLayout">
+          <property name="leftMargin"><number>0</number></property>
+          <property name="topMargin"><number>0</number></property>
+          <property name="rightMargin"><number>0</number></property>
+          <property name="bottomMargin"><number>0</number></property>
+          <property name="spacing"><number>7</number></property>
+          <item>
+           <widget class="QGroupBox" name="displayGroup">
+            <property name="title"><string>AFFICHER</string></property>
+            <layout class="QVBoxLayout" name="displayLayout">
+             <property name="leftMargin"><number>9</number></property>
+             <property name="topMargin"><number>7</number></property>
+             <property name="rightMargin"><number>9</number></property>
+             <property name="bottomMargin"><number>9</number></property>
+             <property name="spacing"><number>4</number></property>
+             <item><widget class="QCheckBox" name="filterHamAlert"><property name="text"><string>HamAlert RX</string></property></widget></item>
+             <item><widget class="QCheckBox" name="filterPSK"><property name="text"><string>PSK Reporter RX</string></property></widget></item>
+             <item><widget class="QCheckBox" name="filterDXCluster"><property name="text"><string>DX Cluster RX</string></property></widget></item>
+             <item><widget class="QCheckBox" name="filterClusterTX"><property name="text"><string>Cluster TX</string></property></widget></item>
+             <item><widget class="QCheckBox" name="filterClusterConnection"><property name="text"><string>Cluster connexion</string></property></widget></item>
+             <item><widget class="QCheckBox" name="filterAccept"><property name="text"><string>Filtre ACCEPT</string></property></widget></item>
+             <item><widget class="QCheckBox" name="filterReject"><property name="text"><string>Filtre REJECT</string></property></widget></item>
+             <item><widget class="QCheckBox" name="filterQSO"><property name="text"><string>QSO Logger32 / JTDX</string></property></widget></item>
+             <item><widget class="QCheckBox" name="filterDatabase"><property name="text"><string>Base Insert / Delete</string></property></widget></item>
+             <item><widget class="QCheckBox" name="filterSystem"><property name="text"><string>Info / Erreur</string></property></widget></item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="clearGroup">
+            <property name="title"><string>Effacer le journal</string></property>
+            <layout class="QVBoxLayout" name="clearLayout">
+             <item><widget class="QPushButton" name="clearLogButton"><property name="text"><string>Effacer</string></property></widget></item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="saveGroup">
+            <property name="title"><string>Sauvegarder le journal</string></property>
+            <layout class="QVBoxLayout" name="saveLayout">
+             <item><widget class="QPushButton" name="saveLogButton"><property name="text"><string>Enregistrer sous…</string></property></widget></item>
+            </layout>
+           </widget>
+          </item>
+          <item><spacer name="filterSpacer"><property name="orientation"><enum>Qt::Vertical</enum></property><property name="sizeHint" stdset="0"><size><width>20</width><height>40</height></size></property></spacer></item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

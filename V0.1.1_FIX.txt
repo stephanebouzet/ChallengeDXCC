@@ -1,0 +1,5 @@
+ChallengeDXCC C++ V0.1.1
+Correction AutoMoc : backend/logger32bridge.h
+- struct Logger32Bridge::Impl et les méthodes du trampoline Win32
+  déplacés hors de la section signals: vers public:.
+- Corrige l'erreur moc : 'Not a signal or slot declaration' ligne 44.
